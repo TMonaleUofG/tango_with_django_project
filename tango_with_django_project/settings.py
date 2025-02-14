@@ -134,6 +134,11 @@ MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
 # Login
-# Tango with Djano, pg 171
+# Tango with Django, pg 171
 
 LOGIN_URL = 'rango:login'
+
+# Session cookies
+# Tango with Django, pg 190
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
