@@ -106,8 +106,7 @@ def add_page(request, category_name_slug):
                 page.views = 0
                 page.save()
 
-                return redirect(reverse('rango:show_category',
-                                        kwargs={'category_name_slug': category_name_slug}))
+                return redirect(reverse('rango:show_category', kwargs={'category_name_slug': category_name_slug}))
         else:
             print(form.errors)
 
